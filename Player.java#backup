@@ -1,0 +1,30 @@
+
+
+/**
+ * 
+ */
+public class Player
+{
+    private Pattern jukebox;
+    private Pattern intro;
+    private Pattern verse;
+    public player()
+    {
+        Pattern jukebox = new Pattern("KEmin T[80]");
+        Pattern intro = new Pattern("KEmin T[80]");
+        Pattern verse = new Pattern("KEmin T[80]");
+        
+        intro.add(bass1,4);
+        intro.add(synth1,2);
+        jukebox.add(intro);
+        
+        verse.add(guitar1);
+        verse.add(bass1,14);
+        verse.add(synth1,7);
+        verse.add(voxMelody1);
+        jukebox.add(verse);
+        
+        Player player = new Player();
+        player.play(jukebox);
+    }
+}
