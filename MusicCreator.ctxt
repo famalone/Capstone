@@ -1,2 +1,14 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=org.jfugue.Pattern\ synthBass()
+comment0.text=\n\ @return\ \ Returns\ the\ bass\ pattern\ used\ in\ the\ intro\ and\ verse\ of\ the\ song.\n
+comment1.params=
+comment1.target=org.jfugue.Pattern\ guitar()
+comment1.text=\n\ @return\ \ Returns\ the\ guitar\ pattern\ used\ in\ the\ verse\ of\ the\ song.\n
+comment2.params=
+comment2.target=org.jfugue.Pattern\ synthStrings()
+comment2.text=\n\ @return\ \ Returns\ the\ strings\ pattern\ used\ in\ the\ intro\ and\ verse\ of\ the\ song.\n
+comment3.params=
+comment3.target=org.jfugue.Pattern\ synthMelody()
+comment3.text=\n\ @return\ \ Returns\ the\ synth\ melody\ (originally\ vocals)\ pattern\ used\ in\ the\ verse\ of\n\ \ \ \ \ \ \ \ \ \ the\ song.\n
+numComments=4

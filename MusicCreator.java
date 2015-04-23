@@ -1,9 +1,16 @@
 import org.jfugue.*;
 
 /**
+ * @author Fin Malone
+ * @version 04/23/2015
  * 
+ * The class that creates all the necessary notes and pattern strings that can be added into the
+ * song using the MusicPlayer class.
  */
 public class MusicCreator {
+    /**
+     * @return  Returns the bass pattern used in the intro and verse of the song.
+     */
     public Pattern synthBass()
     {
         Pattern bass1 = new Pattern("V0 KEmin T[80] I[SYNTH_BASS_1]");
@@ -11,6 +18,9 @@ public class MusicCreator {
         return bass1;
     }
 
+    /**
+     * @return  Returns the guitar pattern used in the verse of the song.
+     */
     public Pattern guitar()
     {
         Pattern guitar1 = new Pattern("V3 KEmin T[80] I[OVERDRIVEN_GUITAR]");
@@ -20,6 +30,9 @@ public class MusicCreator {
         return guitar1;
     }
 
+    /**
+     * @return  Returns the strings pattern used in the intro and verse of the song.
+     */
     public Pattern synthStrings()
     {
         Pattern synth1 = new Pattern("V1 KEmin T[80] I[SYNTH_STRINGS_1]");
@@ -27,6 +40,10 @@ public class MusicCreator {
         return synth1;
     }
 
+    /**
+     * @return  Returns the synth melody (originally vocals) pattern used in the verse of
+     *          the song.
+     */
     public Pattern synthMelody()
     {
         Pattern voxMelody1 = new Pattern("V2 KEmin T[80] I[SYNTH_VOICE]");

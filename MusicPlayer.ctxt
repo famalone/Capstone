@@ -1,6 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=MusicPlayer()
+comment0.text=\n\ Initiates\ the\ GUI\ interface\ and\ its\ widgets\ and\ sets\ ActionListeners\ to\ them.\n\ Also\ assigns\ the\ different\ patterns\ within\ the\ song\ to\ have\ the\ correct\ key\ signature\n\ and\ tempo.\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
+comment1.text=\n\ Displays\ the\ GUI\ when\ called\ upon\ (the\ method\ that\ must\ be\ called\ to\ start\ the\ program).\n
 numComments=2

@@ -6,9 +6,12 @@ import javax.swing.JLabel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 /**
- * Fin Malone
- * 04/23/2015
- * Implements a GUI 
+ * @author Fin Malone
+ * @version 04/23/2015
+ * 
+ * Implements a GUI interface that allows a user to select seperate instruments within the song
+ * Jukebox Hero (Foreigner). The user can play the song with the selected instruments up until
+ * the second verse. The melody has a slight delay (unnavoidable) unfortunately.
  */
 public class MusicPlayer
 {
@@ -22,7 +25,11 @@ public class MusicPlayer
 
     private MusicCreator create;
     private Pattern intro, verse, jukebox;
-
+    /**
+     * Initiates the GUI interface and its widgets and sets ActionListeners to them.
+     * Also assigns the different patterns within the song to have the correct key signature
+     * and tempo.
+     */
     public MusicPlayer()
     {
         jukebox = new Pattern("KEmin T[80]");
@@ -65,9 +72,23 @@ public class MusicPlayer
 
         frame.setVisible(true);
     }
-
+    /**
+     * This class determines the reactions to all the seperate buttons in the GUI and allows
+     * the user to add instrument tracks.
+     * Listens for when the buttons are clicked and called upon.
+     */
     public class ClickListener implements ActionListener
     {
+        /**
+         * Adds the seperate instruments to the Intro, Verse, or both when a button is clicked.
+         * When the play button is clicked it creates a Player object and plays the song
+         * "jukebox".
+         * 
+         * @pre     The song must have at least one instrument added to it before the play
+         *          button is clicked.
+         *          
+         * @param   event   an ActionEvent object aiding in listening for the button commands.
+         */
         public void actionPerformed(ActionEvent event)
         {
             if(event.getActionCommand().equals("guitar"))
@@ -98,7 +119,9 @@ public class MusicPlayer
             }
         }
     }
-
+    /**
+     * Displays the GUI when called upon (the method that must be called to start the program).
+     */
     public static void main(String[] args)
     {
         MusicPlayer viewer = new MusicPlayer();
